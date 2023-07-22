@@ -1,0 +1,145 @@
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+
+:root {
+  --text: #0b59ce;
+  --bg-body: #0d6efd;
+  --bg-container: white;
+  --border: #2677f0;
+}
+
+body {
+  font-family: Poppins;
+  background-color: var(--bg-body);
+}
+
+.container {
+  background-color: var(--bg-container);
+  margin: 0.5% auto;
+  padding: 3% 5%;
+  border-radius: 1px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  outline: none;
+  border: 1px solid var(--border);
+  color: var(--text);
+  position: relative;
+}
+
+
+
+
+h1 {
+  font-weight: 800;
+}
+
+.form-control:focus,
+.form-select:focus {
+  color: var(--text);
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem var(--bg-container);
+}
+
+.form-control::placeholder,
+.form-select::selection {
+  color: var(--text);
+}
+
+.input-group-text {
+  color: var(--text);
+}
+
+.seldis {
+  color: var(--text);
+}
+
+.sub {
+  min-width: 100%;
+  height: 40px;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  outline: none;
+  border: 1px solid var(--border);
+  color: var(--bg-container);
+  background: var(--bg-body);
+}
+.sub:hover {
+  color: var(--bg-body);
+  background: var(--bg-container);
+}
+
+
+.dark{
+    position: fixed;
+    bottom: 1%;
+    right: 1.5%;
+    color: black;
+    cursor: pointer;
+}
+
+.shades{
+  position: absolute;
+  top: 30%;
+  transform: rotate(25deg);
+  opacity: 2%;
+  filter: grayscale(80);
+  animation: bnc 10s infinite;
+  transition: 0.5s;
+  overflow: hidden;
+  -webkit-animation: bnc 20s infinite;
+}
+
+
+@keyframes bnc {
+0%{
+  transform: rotate(25deg);
+}
+10%{
+  transform: rotate(35deg);
+}
+20%{
+  transform: rotate(45deg);
+}
+30%{
+  transform: rotate(55deg);
+
+}
+40%{
+  transform: rotate(65deg);
+
+}
+50%{
+  transform: rotate(55deg);
+
+}
+60%{
+  transform: rotate(45deg);
+
+}
+70%{
+  transform: rotate(35deg);
+
+}
+80%{
+  transform: rotate(25deg);
+
+}
+90%{
+  transform: rotate(15deg);
+
+}
+95%{
+  transform: rotate(5deg);
+
+}
+100%{
+  transform: rotate(-5deg);
+
+}
+  
+}
